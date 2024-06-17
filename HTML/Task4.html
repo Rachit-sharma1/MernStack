@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task4</title> 
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 300px; 
+            height: 300px; 
+            margin: 0 auto;
+        }
+        label {
+            width: 155px;
+            display: inline-block;
+        }
+        form {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .back-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .form-container {
+            align-items: center; 
+            width: fit-content; 
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">Back</a>
+    <center>
+        <h3><u>Task 4</u></h3>
+    </center>
+    <div class="form-container">
+        <form>
+            <table>
+                <tr>
+                    <td style="width: 180px;">
+                        <label for="fullname">Full Name:</label>
+                    </td>
+                    <td><input type="text" id="fullname" placeholder="Enter Full Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="repassword">Re Password:</label></td>
+                    <td><input type="password" id="repassword" placeholder="Re-enter Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><input type="text" id="address" placeholder="Enter Address"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" placeholder="Enter Age"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Save" id="save">
+        </form>
+    </div>    
+</body>
+</html>
